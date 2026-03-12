@@ -1,0 +1,13 @@
+# Task Plan: LilPetal Crafts Website Verification
+
+- [ ] Navigate to http://localhost:8001/ - **Done**
+- [ ] Capture screenshot of Hero Section
+- [ ] Scroll down and show 'Why Choose Us', 'Categories', and 'Featured Gifts'
+- [ ] Verify sticky 'Call Now' and floating 'WhatsApp' buttons
+- [ ] Visit 'Products' page and capture screenshot
+- [ ] Visit 'About Us' page and capture screenshot
+- [ ] Visit 'Custom Orders' page, review form, and capture screenshot
+
+## Findings
+- Initial navigation to http://localhost:8001/ successful.
+- Floating WhatsApp button detected in DOM.

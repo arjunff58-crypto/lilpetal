@@ -1,0 +1,43 @@
+# Recreate Breezy Rhino Website
+
+## Goal Description
+Recreate the highly visual, interactive layout of the Breezy Rhino website, focusing on premium design aesthetics, deep colors, bold typography, and 3D layered parallax effects. We will use HTML, Vanilla CSS, and JavaScript (with GSAP and Lenis) to deliver a high-fashion, Awwwards-winning look.
+
+## Proposed Changes
+
+### Core Project Files
+We will create the project inside `C:\Users\USER\.gemini\antigravity\scratch\breezy-rhino\`.
+
+#### [NEW] [index.html](file:///C:/Users/USER/.gemini/antigravity/scratch/breezy-rhino/index.html)
+- Standard HTML5 setup.
+- Imports for Google Fonts (Space Grotesk for headings, Inter for body).
+- Import for GSAP (ScrollTrigger) and Lenis (smooth scroll).
+- Semantic structure:
+  - Header: Top Logo
+  - Hero: Main title overlaying 3D perspective images
+  - Navigation: Floating pill navbar at the bottom
+  - Sections: About, Services, Expertise, Partners, Stats, FAQ
+  - Footer: Massive text branding and big layout links.
+
+#### [NEW] [styles.css](file:///C:/Users/USER/.gemini/antigravity/scratch/breezy-rhino/styles.css)
+- Custom CSS variables for the exact color palette (Black `#111`, White `#fff`, Lime Green `#DFFF3B`, Sky Blue `#87CEEB`, Orange `#F2994A`).
+- Advanced typography rules (tight letter spacing, massive `vw` sized text).
+- Specific classes for 3D transforms (`transform: perspective(1000px) rotateY(...)`) on the hero images.
+- Flexbox/Grid layouts for all sections, focusing on matching the split and grid designs from the research report.
+- Hover states for buttons (inverse colors, scaling).
+
+#### [NEW] [script.js](file:///C:/Users/USER/.gemini/antigravity/scratch/breezy-rhino/script.js)
+- Initialize Lenis for buttery smooth scrolling.
+- Use GSAP ScrollTrigger to manipulate the Y-axis and rotation of the hero images depending on scroll.
+- Staggered fade-up animations for text and cards when they enter the viewport.
+
+## Verification Plan
+
+### Automated Tests
+- This is a highly visual, aesthetic task, so traditional automated unit tests don't apply.
+
+### Manual Verification
+- We will start a local HTTP server (`python -m http.server 8000`).
+- We will use the `browser_subagent` to navigate to `http://localhost:8000`, capture screenshots, and record a video of the scroll animations.
+- We will review the screenshots internally to ensure the styling, spacing, and fonts perfectly match the collected reference.
+- Once polished, we will provide the final walkthrough to the user.
